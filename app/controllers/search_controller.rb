@@ -6,6 +6,8 @@ class SearchController < ApplicationController
       url: "#{ENV['COMPANIES_URL']}?q=#{search_for}",
       user: ENV['COMPANIES_API_KEY'],
     )
-    render json: JSON.parse(response)
+
+    companies = JSON.parse(response)
+    render json: companies
   end
 end
