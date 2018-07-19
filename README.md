@@ -35,3 +35,5 @@
         ```
 
         Follow the failing tests to implement the proper code. Run rake db:migrate to create a schema even though we don't have a migration yet, Rails will want a basic schema.
+1. Change port so client can have 3000
+    * Search for the port 3000 and change it to 3000. Restart server and make sure server and client are still happy
