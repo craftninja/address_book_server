@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+company = Company.create!({
+  title: 'COG LIMITED',
+  address_snippet: 'Ivy House Market Place, Reepham, Norwich, England, NR10 4LZ',
+  company_number: '03979221',
+})
+
+officer = Officer.create!({
+  name: 'HILL, Matthew Alistair',
+  company_id: company.id,
+})
+
+officer = Officer.create!({
+  name: 'SLATER, Mark Allen',
+  company_id: company.id,
+})

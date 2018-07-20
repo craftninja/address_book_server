@@ -27,7 +27,7 @@ describe 'Companies - ', :type => :request do
       :company => {
         :title => 'Cognizant',
         :address_snippet => '123 Main Street',
-        :company_number => 1234,
+        :company_number => '01234',
       },
       :officers => {
         :items => [

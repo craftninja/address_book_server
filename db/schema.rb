@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2018_07_20_131013) do
   create_table "companies", force: :cascade do |t|
     t.string "title", null: false
     t.string "address_snippet"
-    t.integer "company_number", null: false
+    t.string "company_number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
