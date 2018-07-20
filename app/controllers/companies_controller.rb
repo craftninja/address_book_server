@@ -1,4 +1,9 @@
 class CompaniesController < ApplicationController
+  def index
+    companies = Company.all
+    render json: {companies: companies}
+  end
+
   def new
     company = Company.create(company_params)
     officers = officers_params.map do |officer|
