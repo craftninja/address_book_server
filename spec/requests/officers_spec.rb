@@ -6,15 +6,7 @@ describe 'Officers - ', :type => :request do
     no_officers = JSON.parse(response.body)
     expect(no_officers).to eq({'officers' => []})
 
-    company = Company.create({
-      title: 'Cognizant',
-      address_snippet: '123 Main Street',
-      company_number: 1234,
-    })
-    Officer.create({
-      name: 'Serena Williams',
-      company_id: company.id
-    })
+    create_officer
 
     get '/officers'
     all_officers = JSON.parse(response.body)

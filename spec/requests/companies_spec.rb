@@ -6,11 +6,7 @@ describe 'Companies - ', :type => :request do
     no_companies = JSON.parse(response.body)
     expect(no_companies).to eq({'companies' => []})
 
-    Company.create({
-      title: 'Cognizant',
-      address_snippet: '123 Main Street',
-      company_number: 1234,
-    })
+    create_company
 
     get '/companies'
     all_companies = JSON.parse(response.body)
