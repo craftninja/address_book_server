@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/search', to: 'search#index'
   get '/companies', to: 'companies#index'
   post '/companies', to: 'companies#new'
+  get '/officers', to: 'officers#index'
 end
