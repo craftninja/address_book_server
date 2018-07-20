@@ -1,6 +1,8 @@
+require "#{Rails.root}/app/serializers/officer_serializer.rb"
+
 class OfficersController < ApplicationController
   def index
-    officers = Officer.all
-    render json: {officers: officers}
+    serialized_officers = Officer.all.map { |officer|  officer_serializer(officer)}
+    render json: {officers: serialized_officers}
   end
 end

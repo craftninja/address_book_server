@@ -15,9 +15,13 @@ describe 'Officers - ', :type => :request do
     expect(all_officers['officers'][0].keys).to eq([
       'id',
       'name',
-      'company_id',
-      'created_at',
-      'updated_at',
+      'company',
+    ])
+    expect(all_officers['officers'][0]['company'].keys).to eq([
+      'id',
+      'address_snippet',
+      'company_number',
+      'title',
     ])
   end
 end
