@@ -9,6 +9,11 @@
 * list of saved officers at [/officers](https://addressbook-server.herokuapp.com/officers)
 * post to companies creates new companies and associated officers (see [companies spec](./spec/requests/companies_spec.rb))
 
+### Associated links
+
+* [client repo](https://github.com/craftninja/address-book-client)
+* [client live app](https://addressbook-client.herokuapp.com/)
+
 ### Get this running
 
 1. Fork, clone, and bundle
