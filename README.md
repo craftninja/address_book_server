@@ -1,5 +1,14 @@
 # README
 
+### Chekkitout
+
+[addressbook-server.herokuapp.com](https://addressbook-server.herokuapp.com/)
+
+* get a greeting at [index](https://addressbook-server.herokuapp.com/)
+* list of saved companies at [/companies](https://addressbook-server.herokuapp.com/companies)
+* list of saved officers at [/officers](https://addressbook-server.herokuapp.com/officers)
+* post to companies creates new companies and associated officers (see [companies spec](./spec/requests/companies_spec.rb))
+
 ### Get this running
 
 1. Fork, clone, and bundle
